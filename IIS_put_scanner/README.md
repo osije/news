@@ -2,30 +2,30 @@
 
 ±¾¹¤¾ßÓÃÓÚÉ¨Ãè´æÔÚ **IIS 6.0 WebDAV PUT Â©¶´** µÄÄ¿±êÖ÷»ú£¬²¢×Ô¶¯³¢ÊÔÉÏ´«²âÊÔÎÄ¼þ¼°ÇåÀíºÛ¼£¡£Ö§³Ö²¢·¢É¨Ãè¡¢½á¹ûÊä³öµ½ÎÄ¼þ¡¢Ä¿±êÅúÁ¿µ¼ÈëµÈ¹¦ÄÜ£¬ÊÊºÏÔÚÄÚÍø»òÉøÍ¸²âÊÔ³¡¾°ÏÂ¿ìËÙ·¢ÏÖÇ±ÔÚ·çÏÕ¡£
 
-> ?? **ÃâÔðÉùÃ÷**£º±¾¹¤¾ß½ö¹©ÊÚÈ¨²âÊÔÓëÑÐ¾¿ÓÃÍ¾£¬½ûÖ¹ÓÃÓÚ·Ç·¨¹¥»÷ÐÐÎª£¡
+>  **ÃâÔðÉùÃ÷**£º±¾¹¤¾ß½ö¹©ÊÚÈ¨²âÊÔÓëÑÐ¾¿ÓÃÍ¾£¬½ûÖ¹ÓÃÓÚ·Ç·¨¹¥»÷ÐÐÎª£¡
 
 ---
 
-## ? ¹¦ÄÜÌØÉ«
+## :pushpin: ¹¦ÄÜÌØÉ«
 
-- ? Ö§³Öµ¥Ä¿±ê»òÄ¿±êÎÄ¼þµ¼Èë
-- ? ¿É²¢·¢Ö´ÐÐ£¬¼ÓËÙÉ¨ÃèÁ÷³Ì
-- ? ×Ô¶¯Ê¶±ð IIS/6.0 Ö¸ÎÆ
-- ? ²âÊÔ `PUT` Â©¶´ÊÇ·ñ´æÔÚ
-- ? ×Ô¶¯É¾³ýÉÏ´«²âÊÔÎÄ¼þ£¨ÇåÀíºÛ¼££©
-- ? ¿ÉÑ¡Êä³ö½á¹ûµ½ÎÄ¼þ
-- ? Î±Ôì User-Agent ÒþÄäÐÐÎª
+-  Ö§³Öµ¥Ä¿±ê»òÄ¿±êÎÄ¼þµ¼Èë
+-  ¿É²¢·¢Ö´ÐÐ£¬¼ÓËÙÉ¨ÃèÁ÷³Ì
+-  ×Ô¶¯Ê¶±ð IIS/6.0 Ö¸ÎÆ
+-  ²âÊÔ `PUT` Â©¶´ÊÇ·ñ´æÔÚ
+-  ×Ô¶¯É¾³ýÉÏ´«²âÊÔÎÄ¼þ£¨ÇåÀíºÛ¼££©
+-  ¿ÉÑ¡Êä³ö½á¹ûµ½ÎÄ¼þ
+-  Î±Ôì User-Agent ÒþÄäÐÐÎª
 
 ---
 
-## ? Ê¹ÓÃ·½·¨
+## :pushpin: Ê¹ÓÃ·½·¨
 
-### ? ¹¹½¨
+###  ¹¹½¨
 
 ```bash
 go build -o stealth_scanner main.go\
 ```
-### ? ÔËÐÐ²ÎÊý
+###  ÔËÐÐ²ÎÊý
 ```bash
 ./stealth_scanner -t 192.168.1.100
 ./stealth_scanner -f targets.txt -c 20 -o result.txt
@@ -39,7 +39,7 @@ go build -o stealth_scanner main.go\
 | -o | ½«É¨Ãè½á¹ûÊä³öµ½Ö¸¶¨ÎÄ¼þ|
 | -c | ÉèÖÃ²¢·¢ÊýÁ¿£¨Ä¬ÈÏ£º10£©|
 
-### ? Ê¾ÀýÊä³ö
+###  Ê¾ÀýÊä³ö
 
 ```text
 [192.168.1.100] [VULNERABLE] | Server: Microsoft-IIS/6.0 | ÉÏ´«³É¹¦, ÒÑÇåÀí (/abc123xyz.txt)
@@ -47,11 +47,11 @@ go build -o stealth_scanner main.go\
 [192.168.1.102] [ERROR] ÎÞ·¨Á¬½Ó
 ```
 
-## ? Â©¶´Ô­ÀíËµÃ÷
+##  Â©¶´Ô­ÀíËµÃ÷
 
 IIS 6.0 Ä¬ÈÏÆôÓÃ WebDAV ¹¦ÄÜ£¬ÈôÎ´½ûÓÃ PUT ¶¯×÷»òÎ´×öÈ¨ÏÞÏÞÖÆ£¬¹¥»÷Õß¿ÉÉÏ´«ÈÎÒâÎÄ¼þÖÁ Web Ä¿Â¼£¬ÐÎ³ÉÔ¶³Ì´úÂëÖ´ÐÐµÈ¸ßÎ£Â©¶´¡£
 
-### ? ¹Ø¼üÊµÏÖÂß¼­
+###  ¹Ø¼üÊµÏÖÂß¼­
 
 Ö¸ÎÆÊ¶±ð£ºÍ¨¹ý HEAD / ÇëÇóÌáÈ¡ Server Í·ÐÅÏ¢£¬È·ÈÏÊÇ·ñÎª IIS 6.0
 
@@ -61,7 +61,7 @@ IIS 6.0 Ä¬ÈÏÆôÓÃ WebDAV ¹¦ÄÜ£¬ÈôÎ´½ûÓÃ PUT ¶¯×÷»òÎ´×öÈ¨ÏÞÏÞÖÆ£¬¹¥»÷Õß¿ÉÉÏ´«ÈÎÒâÎ
 
 Î±×°ÐÐÎª£ºÎ±Ôì Firefox ä¯ÀÀÆ÷ User-Agent ¼õÉÙÈÕÖ¾ÏÔÖøÐÔ
 
-### ? ÊäÈëÎÄ¼þ¸ñÊ½
+###  ÊäÈëÎÄ¼þ¸ñÊ½
 targets.txt Ê¾Àý£¨Ã¿ÐÐÒ»¸ö IP »òÓòÃû£©£º
 
 ``` lua
@@ -70,12 +70,12 @@ web01.local
 192.168.1.102
 ```
 
-### ?? ×¢ÒâÊÂÏî
+###  ×¢ÒâÊÂÏî
 ¹¤¾ßÊ¹ÓÃ HTTP Ð­Òé£¨Ä¬ÈÏ¶Ë¿Ú 80£©£¬ÈçÐèÖ§³Ö HTTPS Çë×ÔÐÐÀ©Õ¹Âß¼­
 
 ÈôÄ¿±êÖ÷»úÆôÓÃÁËÈÏÖ¤»ò IP °×Ãûµ¥£¬¸Ã·½·¨¿ÉÄÜÊ§Ð§
 
 ÓÉÓÚ²¿·Ö WAF »áÀ¹½Ø PUT ÇëÇó£¬¿ÉÄÜµ¼ÖÂÎó±¨»òÇëÇóÊ§°Ü
 
-### ?? ·¨ÂÉÉùÃ÷
+###  ·¨ÂÉÉùÃ÷
 ±¾¹¤¾ß½ö¹©ÍøÂç°²È«ÑÐ¾¿ÓëºÏ¹æ²âÊÔÓÃÍ¾¡£Ê¹ÓÃÕßÐèÑÏ¸ñ×ñÊØµ±µØ·¨ÂÉ·¨¹æ£¬¶ÔÒò·Ç·¨Ê¹ÓÃ±¾¹¤¾ßÔì³ÉµÄÈÎºÎºó¹û£¬¿ª·¢Õß²»³Ðµ£ÈÎºÎÔðÈÎ¡£
