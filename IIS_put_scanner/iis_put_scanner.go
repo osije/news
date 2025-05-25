@@ -106,7 +106,7 @@ func main() {
 	}
 }
 
-// ScanTarget 扫描单个目标
+// ScanTarget 扫描单目标
 func ScanTarget(target string) string {
 	client := &http.Client{Timeout: 5 * time.Second}
 	randomPath := generateRandomFilename() // 生成伪随机文件名
